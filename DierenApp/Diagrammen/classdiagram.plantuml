@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+    class Dier {
+        - Naam: string
+        - Geluid: string
+        - AantalPoten: int
+        - HeeftStaart: bool       
+}
+@enduml
