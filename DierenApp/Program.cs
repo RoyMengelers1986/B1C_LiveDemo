@@ -34,6 +34,13 @@ namespace DierenApp
             Console.WriteLine($"{olifant.Naam}, {olifant.AantalPoten}");
             Console.ReadLine();
 
+            Baas huisBaas = new Baas("Patrick", new List<Dier> { olifant, kat });
+
+            foreach (var dier in huisBaas.HuisDieren)
+            {
+                Console.WriteLine($"{huisBaas.Naam} heeft dier: {dier.Naam}");
+            }
+
             //List<string> kleuren = new List<string>();
             //kleuren.Add("rood");
         }
